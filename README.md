@@ -2,7 +2,7 @@
 This is a patched net-snmpd-5.7.3d daemon which can be used to enable SNMP monitoring on CoreOS. Within CoreOS it is not possible to execute a volume mount on /proc. In order to achieve this, the sourcode has been patched to use /host_proc. By executing a volume mount on /host_proc, SNMP is able to use the standard MIBS which collect metrics from the guest CoreOS system.
 
 # Applied patch
-The applied patch is rather simple but effective. The code is executed through a shell script calles "apply_patch.sh".
+The applied patch is rather simple but effective. The code is executed through a shell script called "apply_patch.sh".
 
 ```shell
 #!/bin/bash
