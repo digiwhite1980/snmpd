@@ -49,3 +49,6 @@ docker run -d --name snmpd \
 	-p 161:161/udp \
 	digiwhite/snmpd
 ```
+
+## Updates
+Added automated build
