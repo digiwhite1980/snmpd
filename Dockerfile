@@ -8,8 +8,10 @@ EXPOSE 161 161/udp
 WORKDIR /tmp
 
 RUN > /var/log/yum.log && \
-    yum -y group install 'Development Tools' && \
-    yum install -y zlib-devel \
+    yum install -y make \
+		   gcc \
+		   gcc-c++ \
+		   zlib-devel \
 		   perl-ExtUtils-Embed \
 		   perl-devel
 		   

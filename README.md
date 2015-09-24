@@ -27,7 +27,7 @@ rpm -e --nodeps $(grep Installed /var/log/yum.log | grep -v perl-libs | awk '{pr
 ```
 
 ## snmpd.conf
-We added an external snmpd.conf because the EXAMPLE.conf file is not good enough to use as the default configuration. We want SNMPD to listen on all ports rather than only localhost. Also we might want to introduce a level of authorization rather than using the 'public' community string for collection all metrics available.
+We added an external snmpd.conf because the EXAMPLE.conf file is not good enough to use as the default configuration. We want SNMPD to listen on all ports rather than only localhost. Also we might want to introduce a level of authorization rather than using the 'public' community string for collecting all metrics available.
 
 ```
 ...
