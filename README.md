@@ -45,7 +45,9 @@ Last but not least we need to run the image ofcourse.
 #!/bin/bash
 
 docker run -d --name snmpd \
-	-v /proc:/host_proc \
+	-v /proc:/host_proc:ro \
+	--privileged \
+	--net=host \
 	-p 161:161/udp \
 	digiwhite/snmpd
 ```
