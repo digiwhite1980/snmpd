@@ -44,8 +44,8 @@ Last but not least we need to run the image ofcourse.
 ```shell
 #!/bin/bash
 
-docker run -d --name snmpd \
-	-v /proc:/host_proc:ro \
+docker run -d --name snmpd --read-only=true \
+	-v /proc:/host_proc \
 	--privileged \
 	--net=host \
 	-p 161:161/udp \
