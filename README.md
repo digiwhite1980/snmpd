@@ -39,7 +39,8 @@ rocommunity secret  default    -V all
 ```
 
 # Run the image
-Last but not least we need to run the image ofcourse. 
+===============
+Last but not least we need to run the image ofcourse. Please note that we run the container in read-only mode.
 
 ```shell
 #!/bin/bash
@@ -53,4 +54,5 @@ docker run -d --name snmpd --read-only=true \
 ```
 
 # Tracking
+==========
 - 2015-09-24: Added automated build through github
