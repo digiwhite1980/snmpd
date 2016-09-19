@@ -1,3 +1,5 @@
+[![](https://images.microbadger.com/badges/image/digiwhite/snmpd.svg)](https://microbadger.com/images/digiwhite/snmpd "Get your own image badge on microbadger.com")
+
 ## Adjusted SNMPD daemon for Docker use
 This is a patched net-snmpd-5.7.3d daemon which can be used to enable SNMP monitoring on CoreOS. Within CoreOS it is not possible to execute a volume mount on /proc. In order to achieve this, the sourcode has been patched to use /host_proc. By executing a volume mount on /host_proc, SNMP is able to use the standard MIBS which collect metrics from the guest CoreOS system.
 
@@ -56,5 +58,3 @@ docker run -d --name snmpd --read-only=true \
 # Tracking
 ==========
 - 2015-09-24: Added automated build through github
-
-[![](https://images.microbadger.com/badges/image/digiwhite/snmpd.svg)](https://microbadger.com/images/digiwhite/snmpd "Get your own image badge on microbadger.com")
