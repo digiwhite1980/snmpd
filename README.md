@@ -57,5 +57,4 @@ docker run -d --name snmpd --read-only=true \
 ==========
 - 2015-09-24: Added automated build through github
 
-
-https://microbadger.com/images/digiwhite/snmpd
+[![](https://images.microbadger.com/badges/image/digiwhite/snmpd.svg)](https://microbadger.com/images/digiwhite/snmpd "Get your own image badge on microbadger.com")
