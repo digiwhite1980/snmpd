@@ -56,3 +56,6 @@ docker run -d --name snmpd --read-only=true \
 # Tracking
 ==========
 - 2015-09-24: Added automated build through github
+
+```
+https://microbadger.com/images/digiwhite/snmpd
