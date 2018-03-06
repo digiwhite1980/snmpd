@@ -7,6 +7,7 @@ MAINTAINER Raymond Otto <otto@digiwhite.nl>
 EXPOSE 161 161/udp
 WORKDIR /tmp
 
+RUN yum -y update
 RUN > /var/log/yum.log && \
     yum install -y make \
 		   gcc \
